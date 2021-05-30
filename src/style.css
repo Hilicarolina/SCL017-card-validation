@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Ubuntu', sans-serif;
+  }
+
+  body{
+background:#808000;
+margin:5px 20px;
+}
+
+.entrada{
+ font-family: 'Kalam', sans-serif;
+ font-size: 40px;
+}
+.portalpago{
+  background:#f8f8f8;
+  max-width: 360px;
+  margin:90px auto;
+  height:auto;
+  padding:35px;
+  padding-top:40px;
+  border-radius: 5px;
+  position:relative;
+}
+
+.portalpago h2{
+  text-align: center;
+  letter-spacing: 2px;
+   margin-bottom: 20px;
+}
+
+.form .label{
+  display: block;
+  margin-bottom:3px;
+}
+
+.form .input{
+  padding: 13px 0 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-wrap: 3px;
+  font-size: 16px;
+  color: #555555;
+  }
+
+.form .input:hover{
+  color:#808000;
+}
+
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width:48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+ position: absolute;
+ bottom: 12px;
+ left: 10px;
+ }
+
+.fa-user{
+  margin-bottom: 16px;
+}
+
+
+.fa-credit-card{
+  margin-bottom: 16px;
+}
+
+.fa-calendar-alt{
+  margin-bottom: 16px;
+}
+
+.fa-lock{
+    margin-bottom: 38px;
+  }
+
+.fa-dollar-sign{
+    margin-bottom: 19px;
+}
+
+.form .btn{
+margin-top: 6px;
+background:#CCCC66;
+padding: 12px;
+text-align: center;
+border-radius: 5px;
+cursor: pointer;
+padding: 13px 0 13px 15px;
+width: 100%;
+font-weight:bold;
+font-size: 16px;
+}
+
+.form .btn:hover{
+background:#808000;
+}
+
+.logo-portalpago{
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height:100px;
+  background:#f8f8f8;
+  text-align: center;
+  border-radius: 5px
+ }
+
+
+.logo-portalpago h1{
+  font-family: 'Kalam', cursive;
+}
+
+.field{
+  font-size: 13px;
+  color:#f8f8f8;
+}
+.error-user{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+}
+
+.error-number{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+}
+
+.error-exp{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+}
+
+.error-seguridad{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+}
+
+.error-money{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+}
