@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Ubuntu', sans-serif;
+  }
+
+body{
+background:#A66F83;
+margin:5px 20px;
+width: auto;
+height: 500px;
+text-align: center;
+}
+
+.encabezado{
+  font-family: 'Kalam', cursive;
+  font-size: 50px;
+  display: inline-block;
+  position: relative;
+  
+  }
+  
+header::after,header::before{
+  content:"";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: black;
+  top: 0.7em;
+  }
+
+  header::before{
+   left: -140px;
+  }
+
+  header::after{
+    right: -140px;
+ }
+
+footer{
+  font-family: 'Kalam', cursive;
+  font-size: 15px;
+  text-align: left;
+}
+
+.portalpago{
+  background:#F2B3B3;
+  max-width: 360px;
+  margin:20px auto;
+  height:auto;
+  padding:35px;
+  padding-top:30px;
+  border-radius: 5px;
+  position:relative;
+}
+
+.portalpago h2{
+  text-align: center;
+  letter-spacing: 2px;
+   margin-bottom: 20px;
+}
+
+.form .label{
+  display: block;
+  margin-bottom:3px;
+  text-align: left;
+}
+
+input{
+  padding: 13px 0 13px 25px;
+  width: 100%;
+  text-align: center;
+  background-color: #F2D7D0;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-wrap: 3px;
+  font-size: 16px;
+  color: #555555;
+  }
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width:48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+ position: absolute;
+ bottom: 12px;
+ left: 10px;
+ }
+
+.fa-user{
+  margin-bottom: 16px;
+}
+
+
+.fa-credit-card{
+  margin-bottom: 16px;
+}
+
+.fa-calendar-alt{
+  margin-bottom: 16px;
+}
+
+.fa-lock{
+    margin-bottom: 38px;
+  }
+
+.fa-dollar-sign{
+    margin-bottom: 19px;
+}
+
+.form .btn{
+margin-top: 6px;
+background: #F2B3B3;
+padding: 12px;
+text-align: center;
+border-radius: 5px;
+cursor: pointer;
+padding: 13px 0 13px 15px;
+width: 100%;
+font-weight:bold;
+font-size: 16px;
+}
+
+.form .btn:hover{
+background:#A66F83;
+}
+
+
+
+.field{
+  font-size: 13px;
+  color:#F2B3B3;
+}
+.error-user{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+  text-align: left;
+}
+
+.error-number{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+  text-align: left;
+}
+
+.error-exp{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+  text-align: left;
+}
+
+.error-seguridad{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+  text-align: left;
+}
+
+.error-money{
+  font-size: 13px;
+  color:#FF0000;
+  display:none;
+  text-align: left;
+}

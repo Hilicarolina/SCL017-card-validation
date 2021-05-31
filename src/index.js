@@ -18,7 +18,7 @@ document.getElementById("textElement").addEventListener("keyup", (e) => {
   
     document.getElementById("security").addEventListener("keyup", (e) => {
       let valorInput = e.target.value;
-      document.getElementById("security").value = valorInput.replace(/\D/g,"").replace(/\s/g,"");
+      document.getElementById("security").value = valorInput.replace(/\s/g,"");
   })
   
       document.getElementById("cash").addEventListener("keyup", (e) => {
