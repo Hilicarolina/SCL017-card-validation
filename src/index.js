@@ -95,13 +95,13 @@ document.getElementById("btn").addEventListener("click", ()=>{
 
       //---------------------------------------------
       let creditCardNumber = validator.aux;
-      validator.isValid(creditCardNumber);
       if(validator.isValid(creditCardNumber)==true){
-        alert("Su tarjeta es válida");
+        swal("Su tarjeta es válida","", "success");
       }else{
-        alert("Su tarjeta no es válida");
+        swal("Su tarjeta es inválida","", "error");
       }
-      validator.aux =[];
+      
+      
 });
 
 //__________________________________________________________________________________

@@ -1,7 +1,9 @@
 let aux = [];
 function maskify(creditCardNumber) {
   let card = creditCardNumber;
+  console.log(card);
   aux.push(card[card.length-1]);
+  console.log(aux);
   card=card.split("");
   let hideNum = [];
    for(let i = 0; i < card.length; i++){

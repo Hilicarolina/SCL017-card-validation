@@ -8,22 +8,52 @@ box-sizing: border-box;
 font-family: 'Ubuntu', sans-serif;
   }
 
-  body{
-background:#808000;
+body{
+background:#A66F83;
 margin:5px 20px;
+width: auto;
+height: 500px;
+text-align: center;
 }
 
-.entrada{
- font-family: 'Kalam', sans-serif;
- font-size: 40px;
+.encabezado{
+  font-family: 'Kalam', cursive;
+  font-size: 50px;
+  display: inline-block;
+  position: relative;
+  
+  }
+  
+header::after,header::before{
+  content:"";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: black;
+  top: 0.7em;
+  }
+
+  header::before{
+   left: -140px;
+  }
+
+  header::after{
+    right: -140px;
+ }
+
+footer{
+  font-family: 'Kalam', cursive;
+  font-size: 15px;
+  text-align: left;
 }
+
 .portalpago{
-  background:#f8f8f8;
+  background:#F2B3B3;
   max-width: 360px;
-  margin:90px auto;
+  margin:20px auto;
   height:auto;
   padding:35px;
-  padding-top:40px;
+  padding-top:30px;
   border-radius: 5px;
   position:relative;
 }
@@ -37,12 +67,14 @@ margin:5px 20px;
 .form .label{
   display: block;
   margin-bottom:3px;
+  text-align: left;
 }
 
-.form .input{
+input{
   padding: 13px 0 13px 25px;
   width: 100%;
   text-align: center;
+  background-color: #F2D7D0;
   border: 2px solid #dddddd;
   border-radius: 5px;
   letter-spacing: 1px;
@@ -50,11 +82,6 @@ margin:5px 20px;
   font-size: 16px;
   color: #555555;
   }
-
-.form .input:hover{
-  color:#808000;
-}
-
 
 .card-grp{
   display: flex;
@@ -102,7 +129,7 @@ margin:5px 20px;
 
 .form .btn{
 margin-top: 6px;
-background:#CCCC66;
+background: #F2B3B3;
 padding: 12px;
 text-align: center;
 border-radius: 5px;
@@ -114,56 +141,46 @@ font-size: 16px;
 }
 
 .form .btn:hover{
-background:#808000;
+background:#A66F83;
 }
 
-.logo-portalpago{
-  position: absolute;
-  top: -55px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height:100px;
-  background:#f8f8f8;
-  text-align: center;
-  border-radius: 5px
- }
 
-
-.logo-portalpago h1{
-  font-family: 'Kalam', cursive;
-}
 
 .field{
   font-size: 13px;
-  color:#f8f8f8;
+  color:#F2B3B3;
 }
 .error-user{
   font-size: 13px;
   color:#FF0000;
   display:none;
+  text-align: left;
 }
 
 .error-number{
   font-size: 13px;
   color:#FF0000;
   display:none;
+  text-align: left;
 }
 
 .error-exp{
   font-size: 13px;
   color:#FF0000;
   display:none;
+  text-align: left;
 }
 
 .error-seguridad{
   font-size: 13px;
   color:#FF0000;
   display:none;
+  text-align: left;
 }
 
 .error-money{
   font-size: 13px;
   color:#FF0000;
   display:none;
+  text-align: left;
 }
