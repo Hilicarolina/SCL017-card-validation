@@ -48,13 +48,60 @@ let hiddenFieldCash =document.getElementById("hiddenFieldCash");
 
 
 //_____________________________________________________________________________________
-number.addEventListener("keyup", ()=>{
-                 validator.maskify();
+number.addEventListener("keyup", (e)=>{
+  let creditCardNumber=e.target.value;
+  document.getElementById("textElement").value = validator.maskify(creditCardNumber);
 });
 
-document.getElementById("btn").addEventListener("click", ()=>{
-                 validator.isValid();
 
+document.getElementById("btn").addEventListener("click", ()=>{
+      //-------------------------------------------
+      
+      if (user.value.length < 4) {
+        document.getElementById("inputTitular").style.border = "1px solid red";
+        document.getElementById("inputTitular").focus();
+        errorUser.style.display = "block";
+        hiddenField.style.display = "none";
+        return false;
+      }
+      if (validator.aux.length < 8) {
+        document.getElementById("textElement").style.border = "1px solid red";
+        document.getElementById("textElement").focus();
+        errorNumber.style.display = "block";
+        hiddenFieldNumber.style.display = "none";
+        return false;
+      }
+      if (exp.value.length < 5) {
+        document.getElementById("expiration").style.border = "1px solid red";
+        document.getElementById("expiration").focus();
+        errorExp.style.display = "block";
+        hiddenFieldExp.style.display = "none";
+        return false;
+      }
+      if (seguridad.value.length < 3) {
+        document.getElementById("security").style.border = "1px solid red";
+        document.getElementById("security").focus();
+        errorSeguridad.style.display = "block";
+        return false;
+      }
+    
+      if (money.value.length == 0) {
+        document.getElementById("cash").style.border = "1px solid red";
+        document.getElementById("cash").focus();
+        errorMoney.style.display = "block";
+        hiddenFieldCash.style.display = "none";
+        return false;
+      }
+
+      //---------------------------------------------
+      let creditCardNumber = validator.aux;
+      validator.isValid(creditCardNumber);
+      if(validator.isValid(creditCardNumber)==true){
+        alert("Su tarjeta es válida");
+      }else{
+        alert("Su tarjeta no es válida");
+      }
+      validator.aux =[];
 });
 
 //__________________________________________________________________________________
