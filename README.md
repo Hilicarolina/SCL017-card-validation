@@ -2,24 +2,26 @@
 ![Ginebra Gourmet](https://github.com/Hilicarolina/SCL017-card-validation/assets/14808063/725a7c93-f2ef-434c-86e0-d062e45fc2d3)
 
 ## Índice
-
-- [1. Resumen del proyecto](#item1)
-- [2. Definición del producto](#item2)
-- [3. Investigación de usuarios](#item3)
+- [1. Preámbulo](#item1)
+- [2. Resumen del proyecto](#item2)
+- [3. Definición del producto](#item3)
 - [4. Demo](#item4)
 - [5. Enlace](#item5)
 
-<a name="item1"></a>
-### 1. Introducción.
 
-_Ginebra & Gourmet_, es una aplicación web, con la estructura de un portal de pago, que permite validar/rechazar y enmascarar los dígitos de una
-tarjeta de crédito ingresada por un usuario.
+<a name="item1"></a>
+### 1. Preámbulo
+[El algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn#:~:text=El%20algoritmo%20de%20Luhn%20o,cr%C3%A9dito%2C%20n%C3%BAmeros%20IMEI%2C%20etc.), también llamado algoritmo de módulo 10, es un método de suma de verificación, se utiliza para validar números de identificación; tales como el IMEI de los celulares, tarjetas de crédito, etc.
+
+Este algoritmo es simple. Obtenemos la reversa del número a verificar (que solamente contiene dígitos [0-9]); a todos los números que ocupan una posición par se les debe multiplicar por dos, si este número es mayor o igual a 10, debemos sumar los dígitos del resultado; el número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
+
+![EjemploLuhn](https://github.com/Hilicarolina/SCL017-card-validation/assets/14808063/b3b2421d-0494-4ea4-a1d1-0ff9839d5f49)
+
 
 <a name="item2"></a>
 ### 2. Resumen del proyecto
 
-La validación de la tarjeta se hace implementando, mediante código, el algoritmo de [Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn#:~:text=El%20algoritmo%20de%20Luhn%20o,cr%C3%A9dito%2C%20n%C3%BAmeros%20IMEI%2C%20etc.), también llamado "algoritmo de módulo 10", el cual es un método de verificación que se utiliza para validar números de identificación; tales como el IMEI de los celulares, tarjetas de crédito, etc. En esta aplicación también se implementa la funcionalidad para ocultar todos los
-dígitos ingresados, menos los últimos cuatro.
+_Ginebra & Gourmet_, es una aplicación web, con la estructura de un portal de pago, que permite validar/rechazar y enmascarar los dígitos de una tarjeta de crédito ingresada por un usuario. La validación de la tarjeta se hace implementando, mediante código, el algoritmo de Luhn. En esta aplicación también se implementa la funcionalidad para ocultar todos los dígitos ingresados, menos los últimos cuatro.
 
 <a name="item3"></a>
 ### 3. Definición del producto
