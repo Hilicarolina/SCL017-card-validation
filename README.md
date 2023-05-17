@@ -33,6 +33,11 @@ Para definir la interfaz que tendría la aplicación, se investigó varios porta
 
 <a name="item4"></a>
 ### 4. Demo
+A continuación, se puede visualizar un video sobre el flujo de la aplicación cuando es admisible, y cuando no, el número de Tarjeta introducido por el usuario:
+
+https://github.com/Hilicarolina/SCL017-card-validation/assets/14808063/e45bee7d-78a5-493c-bc63-40735f19a4cb
+
+
 
 <a name="item5"></a>
 ### 5. Enlace
