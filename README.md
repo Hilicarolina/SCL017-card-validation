@@ -39,5 +39,5 @@ https://github.com/Hilicarolina/SCL017-card-validation/assets/14808063/c9150e20-
 
 <a name="item5"></a>
 ### 5. Enlace
-https://hc-angulo.github.io/SCL017-card-validation/
+https://hc-angulo.github.io/card-validation/
 
