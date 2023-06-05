@@ -7,6 +7,7 @@
 - [3. Definición del producto](#item3)
 - [4. Demo](#item4)
 - [5. Enlace](#item5)
+- [6. Herramientas](#item6)
 
 
 <a name="item1"></a>
@@ -40,4 +41,16 @@ https://github.com/Hilicarolina/SCL017-card-validation/assets/14808063/c9150e20-
 <a name="item5"></a>
 ### 5. Enlace
 https://hc-angulo.github.io/card-validation/
+
+### 6. Herramientas
+
+<p align="left>
+ <a href="" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5" width="50" height="50"/>
+<a href="" target="_blank">            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3" width="50" height="50"/></a>
+           </a>
+ <a href="" target="_blank">      
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50"/></a>
+ </p>
 
